@@ -1,6 +1,36 @@
 @charset "utf-8";
 /* CSS Document */
-h1 {
-    font-family: 'Courier New', Courier, monospace;
+.grid_container {
+    display: grid;
+    column-count: 7;
+    grid-auto-columns: 13vw;
+    grid-gap: 0.5vw;
+    background-color: #fff;
+}
+h1, a, button {
+    color: #000000;
+    font-family: Verdana;
+    font-weight: 700;
+}
+p {
+    font-family: 'Courier New';
     font-weight: 400;
+}
+/*-----nav-----*/
+nav {
+    margin-top: 2em;
+    padding: 0.5em 0;
+	justify-content:space-between;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    text-align: center;
+    padding: 0.25em 3em;
+	list-style-type:none;       
+}
+nav li a {
+    text-decoration: none;
 }
