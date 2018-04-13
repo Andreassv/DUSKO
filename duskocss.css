@@ -8,6 +8,7 @@
     background-color: #fff;
 }
 h1, a, button {
+    text-transform: uppercase;
     color: #000000;
     font-family: Verdana;
     font-weight: 700;
@@ -18,19 +19,32 @@ p {
 }
 /*-----nav-----*/
 nav {
+    display: inline-grid;
     margin-top: 2em;
     padding: 0.5em 0;
-	justify-content:space-between;
-}
+}   
 nav ul {
     margin: 0;
     padding: 0;
 }
 nav li {
-    text-align: center;
+    text-align: left;
     padding: 0.25em 3em;
 	list-style-type:none;       
 }
 nav li a {
     text-decoration: none;
+}
+img {
+    max-width: 50%;
+    height: auto;
+}
+.grid_item1 {
+    grid-area: 1 / 1 / span 2 / span 0;
+}
+.grid_item2 {
+    grid-area: 1, 1, span 1, span 1;
+}
+.grid_item5 {
+    background-color: #484848;
 }
